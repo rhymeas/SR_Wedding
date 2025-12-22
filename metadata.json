@@ -1,0 +1,7 @@
+{
+  "name": "Susanne & Rimas - Tuscany Wedding",
+  "description": "A modern, sleek wedding website for Susanne & Rimas featuring an AI concierge, itinerary, and RSVP functionality.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
