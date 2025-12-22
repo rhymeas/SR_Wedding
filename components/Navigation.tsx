@@ -17,6 +17,8 @@ const Navigation: React.FC = () => {
     { name: 'Our Story', href: '#story' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Itinerary', href: '#itinerary' },
+    { name: 'Q&A', href: '#faq' },
+    { name: 'Travel Info', href: '#registry' },
     { name: 'RSVP', href: '#rsvp' },
   ];
 
@@ -29,7 +31,7 @@ const Navigation: React.FC = () => {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-12">
+        <div className="hidden lg:flex space-x-10">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -44,7 +46,7 @@ const Navigation: React.FC = () => {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden text-forest p-2 hover:bg-forest/5 rounded-full transition-colors"
+          className="lg:hidden text-forest p-2 hover:bg-forest/5 rounded-full transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
